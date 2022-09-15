@@ -1,14 +1,50 @@
 Pseudocoding Challenge 3
-
+<!-- 
 - I need to ask my user how many characters should the password be.
-        -HOW do I ask that?  Is there a type of popup/prompt/etc?  Google this.
+        -HOW do I ask that?  Is there a type of popup/prompt/etc?  Google this. -->
 
+        1.  Prompt:  'Welcome!  Please follow the prompts to generate your unique password." ALSO
+        
+        Prompt User: How many characters would you like in your password? Tell min and max, but also check to see if follows the rule upon submission.
+                -IF <8, tell the user it must be 8 or longer.
+                    Then re-prompt
+                -IF >128, tell the user it must be shorter
+                    Then re-prompt
+                -ELSE if 8<= password <=128 move on to next step
 
--I need the user to relog the value if the character is LESS than 8 or GREATER than 128.
-        -IF <8, tell the user it must be 8 or longer
-        -IF >128, tell the user it must be shorter
+                COMPUTER MUST RECORD/REMEMBER THIS VALUE
+
+        3. Prompt:  Do you want to use uppercase?
+            
+        4.  Prompt: Do you want lowercase letters? 
+
+        Prompt: Do you want to use numbers?
+
+        Prompt: Do you want to use special characters?
+
+       
+            Need array of criteria 
+            Write out options as a string for each of the choices.
+            Google methods that exist for string.
+
+        6. User will select options.  
+        Computer must store options and use as possible options in password.
+
+            -->IF user chooses special characters, they need to use the storage with special characters
+             x 3
+             IF numbers
+             IF lowercase
+             IF Uppercase
+             IF special characters
+             **Don't forget option for empty??
+             
+             use to create new array
+             display with matched length
+             write: numbers + lowercase + uppercase 
+             Randomize value
+             Must match length
         
-        
+        FINALLY, Password is generated in box
 
 ## If all goes well
     -I need to ask the user what kind of input you want.
