@@ -1,7 +1,11 @@
 // Assignment Code
 
 var generateBtn = document.querySelector("#generate");
+<<<<<<< HEAD
 console.log("generate button", generateBtn);
+=======
+//need to connect this to the HTML.  Looking for #generate
+>>>>>>> 11707f285bd226bbdd82abb6191e3dbd75815d13
 
 var numericalValue = "0123456789".split('');
   
@@ -20,10 +24,14 @@ function generatePassword() {
   console.log("Hey, you clicked the button!");
   var passwordLength = window.prompt("How many characters would you like in your password? Password must contain at least 8 characters, but no more than 128 characters.");
   // console.log(passwordLength);
+<<<<<<< HEAD
   // //**must force the user to give a reply within this range 8-128 */
   // //add must return a number. Error message
  if (passwordLength >=8 && passwordLength <= 128 )  {
    alert("Your password will contain " + passwordLength + " characters.")
+=======
+  //add must return a number
+>>>>>>> 11707f285bd226bbdd82abb6191e3dbd75815d13
 
  } else{
     alert("Password must contain at least 8 characters, but no more than 128 characters.");
@@ -65,6 +73,7 @@ function generatePassword() {
   }
 
 }
+<<<<<<< HEAD
   
 
 //Now to create master function to pull randomly from the masterArray. Parse from line #19
@@ -72,6 +81,10 @@ function generatePassword() {
 function writeMasterArray() {
 
 }
+=======
+//Now to create master function to pull randomly from the masterArray. Parse from line #19
+//Use math.random and for loop with parameters from user to create the password.  For loop should run a number of times equal to the length of characters chosen for this password.
+>>>>>>> 11707f285bd226bbdd82abb6191e3dbd75815d13
 
 //THEN CALL the function
 
@@ -84,6 +97,11 @@ function writePassword() {
   
   var password = generatePassword(passwordLength);
   var passwordText = document.querySelector("#password");
+<<<<<<< HEAD
+=======
+  //need to connect this to the HTML  Looking for #password
+
+>>>>>>> 11707f285bd226bbdd82abb6191e3dbd75815d13
   passwordText.value = password;
   //need to connect this to the HTML  Looking for #password
   return "the new password";
@@ -93,7 +111,12 @@ function writePassword() {
 //var generateBtn stores locations
 //document.querySelector will return the first element in the document that matches #generate.  See Line 30 of HTML.
 
+<<<<<<< HEAD
+=======
+// Add event listener to generate button in HTML
+>>>>>>> 11707f285bd226bbdd82abb6191e3dbd75815d13
 
 // Add event listener to generate button in HTML
 //When user clicks "Generate" button, it will call the writePassword funtion above. 
 generateBtn.addEventListener("click", writePassword);
+
