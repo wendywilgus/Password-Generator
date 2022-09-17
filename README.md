@@ -7,7 +7,7 @@ This project began by modifying starter code to create an application that enabl
 
 Solving the problems of this project taught me to understand better the relationships between variables and functions in JavaScript, as well as ways to reference components of the HTML code.
 
-Link to deployed site here: 
+Link to deployed site here: https://wendywilgus.github.io/Password-Generator/
 
 ## Table of Contents
 
