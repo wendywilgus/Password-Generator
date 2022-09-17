@@ -26,7 +26,7 @@ function generatePassword() {
    alert("Your password will contain " + passwordLength + " characters.")
    //  console.log(passwordLength)
     //need to create a new variable that tells their passwordLength
-      var wantsLowercase = confirm("Do you want lowercase letters?");
+    var wantsLowercase = confirm("Do you want lowercase letters?");
      // console.log(wantsLowercase);
      var wantsUppercase = confirm("Do you want uppercase letters?");
      // console.log(wantsUppercase);
@@ -39,7 +39,7 @@ function generatePassword() {
    
    
      if(wantsLowercase){
-       masterArray  = masterArray.concat(lowerCase);
+       masterArray = masterArray.concat(lowerCase);
      }
      if(wantsUppercase){
        masterArray = masterArray.concat(upperCase);
@@ -47,7 +47,6 @@ function generatePassword() {
      if(wantsNumerical){
        masterArray = masterArray.concat(numericalValue);
      }
-   
      if(wantsSpecial){
        masterArray = masterArray.concat(specialCharacter);
      }
@@ -63,7 +62,7 @@ function generatePassword() {
 function writePassword(masterArray, passwordLength)  {
   var result = "";
   for ( i = 0; i < passwordLength; i++) {
-    result += masterArray[Math.round(Math.random() * passwordLength)];
+    result += masterArray[Math.round(Math.random() * masterArray.length)];
   }
   var passwordText = document.querySelector("#password");
   passwordText.value = result;
