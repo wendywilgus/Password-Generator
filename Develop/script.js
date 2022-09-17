@@ -31,16 +31,18 @@ function generatePassword() {
  }
 //  console.log(passwordLength)
  //need to create a new variable that tells their passwordLength
-   var wantsLowercase = window.confirm("Do you want lowercase letters?");
+   var wantsLowercase = confirm("Do you want lowercase letters?");
   // console.log(wantsLowercase);
-  var wantsUppercase = window.confirm("Do you want uppercase letters?");
+  var wantsUppercase = confirm("Do you want uppercase letters?");
   // console.log(wantsUppercase);
-  var wantsNumerical = window.confirm("Do you want numbers?");
+  var wantsNumerical = confirm("Do you want numbers?");
   // console.log(wantsNumerical);
-  var wantsSpecial = window.confirm("Do you want special characters?");
+  var wantsSpecial = confirm("Do you want special characters?");
   // console.log(wantsSpecial);
 
   //need to validate the input.  At least one character type must be selected.
+parseInt(passwordLength);
+console.log(passwordLength);
 
   if(wantsLowercase){
     masterArray  = masterArray.concat(lowerCase);
@@ -63,6 +65,7 @@ function generatePassword() {
     console.log(masterArray);
     
   }
+  
 
 }
   
